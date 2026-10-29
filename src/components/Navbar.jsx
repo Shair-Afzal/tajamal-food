@@ -35,15 +35,15 @@ export const Navbar = () => {
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Top Notification Bar */}
-      <div className="bg-gradient-to-r from-red-900 via-amber-800 to-red-900 text-amber-100 text-xs sm:text-sm py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="flex h-2 w-2 relative">
+      <div className="bg-gradient-to-r from-red-900 via-amber-800 to-red-900 text-amber-100 py-1.5 px-3 sm:px-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="flex h-2 w-2 relative shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
             </span>
-            <span className="font-semibold text-white tracking-wide">
-              🔥 Free Delivery over 3km nearby branch  in Lahore!
+            <span className="font-semibold text-white tracking-wide text-[11px] sm:text-xs truncate">
+              🔥 Free Delivery over 3km nearby branch in Lahore!
             </span>
           </div>
 
@@ -67,21 +67,19 @@ export const Navbar = () => {
           isScrolled ? 'shadow-md border-stone-200 py-2.5' : 'border-stone-100 py-3.5'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <img
-                src="/logo.png"
-                alt="Tajamal Fried Chicken Logo"
-                className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl sm:text-2xl font-black tracking-tight text-red-700 font-display leading-tight flex items-center gap-1">
-                TAJAMAL <span className="text-amber-500">CHICKEN</span>
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 group min-w-0">
+            <img
+              src="/logo.png"
+              alt="Tajamal Fried Chicken Logo"
+              className="h-10 sm:h-12 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="flex flex-col min-w-0">
+              <span className="text-xs min-[380px]:text-sm sm:text-lg md:text-xl lg:text-2xl font-black tracking-tight text-red-700 font-display leading-tight truncate">
+                TAJAMAL <span className="text-amber-500">FRIED CHICKEN</span>
               </span>
-              <span className="text-[10px] sm:text-xs font-semibold tracking-wider uppercase text-amber-700">
+              <span className="text-[9px] min-[380px]:text-[10px] sm:text-xs font-semibold tracking-wider uppercase text-amber-700 truncate">
                 Taste Jo Deewana Karde
               </span>
             </div>
@@ -107,7 +105,7 @@ export const Navbar = () => {
           </div>
 
           {/* Right Action Icons: Cart & Call */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <a
               href={`tel:${CONFIG.phone}`}
               className="hidden lg:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold transition-all"
@@ -120,18 +118,18 @@ export const Navbar = () => {
             <button
               onClick={openCart}
               id="navbar-cart-button"
-              className="relative flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl bg-gradient-to-r from-red-600 to-amber-600 text-white shadow-lg shadow-red-600/20 hover:shadow-red-600/35 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+              className="relative flex items-center gap-1.5 p-2 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl bg-gradient-to-r from-red-600 to-amber-600 text-white shadow-md shadow-red-600/20 hover:shadow-red-600/35 active:scale-95 transition-all cursor-pointer"
               aria-label="View Shopping Cart"
             >
               <div className="relative">
-                <ShoppingBag className="w-5 h-5" />
+                <ShoppingBag className="w-4 h-4 sm:w-5 sm:h-5" />
                 {totalItems > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-white text-red-700 font-black text-[11px] h-5 w-5 rounded-full flex items-center justify-center shadow-md animate-bounce">
+                  <span className="absolute -top-2 -right-2 bg-white text-red-700 font-black text-[10px] sm:text-[11px] h-4 w-4 sm:h-5 sm:w-5 rounded-full flex items-center justify-center shadow-md animate-bounce">
                     {totalItems}
                   </span>
                 )}
               </div>
-              <span className="hidden sm:inline font-bold text-sm">
+              <span className="hidden sm:inline font-bold text-xs sm:text-sm">
                 {totalItems > 0 ? formatCurrency(subtotal) : 'Cart'}
               </span>
             </button>
@@ -139,10 +137,10 @@ export const Navbar = () => {
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2.5 rounded-xl text-stone-700 hover:text-red-600 hover:bg-stone-100 transition-colors"
+              className="md:hidden p-2 rounded-xl text-stone-700 hover:text-red-600 hover:bg-stone-100 transition-colors"
               aria-label="Toggle navigation menu"
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
           </div>
         </div>
