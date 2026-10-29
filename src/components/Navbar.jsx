@@ -69,30 +69,30 @@ export const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 sm:gap-3 group min-w-0">
+          <Link to="/" className="flex items-center gap-2 group shrink-0">
             <img
               src="/logo.png"
               alt="Tajamal Fried Chicken Logo"
-              className="h-10 sm:h-12 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
+              className="h-9 sm:h-11 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="flex flex-col min-w-0">
-              <span className="text-xs min-[380px]:text-sm sm:text-lg md:text-xl lg:text-2xl font-black tracking-tight text-red-700 font-display leading-tight truncate">
+            <div className="flex flex-col min-w-0 hidden min-[360px]:flex">
+              <span className="text-xs min-[480px]:text-sm md:text-base lg:text-xl font-black tracking-tight text-red-700 font-display leading-tight whitespace-nowrap">
                 TAJAMAL <span className="text-amber-500">FRIED CHICKEN</span>
               </span>
-              <span className="text-[9px] min-[380px]:text-[10px] sm:text-xs font-semibold tracking-wider uppercase text-amber-700 truncate">
+              <span className="hidden sm:block text-[9px] md:text-[10px] font-semibold tracking-wider uppercase text-amber-700">
                 Taste Jo Deewana Karde
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-1 lg:gap-2">
+          <div className="hidden md:flex items-center gap-0.5 lg:gap-1">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `px-3.5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${
+                  `px-2.5 lg:px-3.5 py-2 rounded-xl text-xs lg:text-sm font-semibold transition-all duration-200 whitespace-nowrap ${
                     isActive
                       ? 'text-red-700 bg-red-50/80 font-bold'
                       : 'text-stone-700 hover:text-red-600 hover:bg-stone-50'

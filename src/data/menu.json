@@ -663,7 +663,7 @@
     "name": "TFC Special Oven Bake Shawarma",
     "price": 480,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1679498189720-a2c00b11b4a7?auto=format&fit=crop&w=800&q=80",
     "description": "Pita filled with roasted chicken and garlic mayo, baked with a layer of molten cheese.",
     "featured": true,
     "badge": "Oven Baked"
@@ -684,7 +684,7 @@
     "name": "Zinger Shawarma",
     "price": 270,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1627308595229-7830a5c18258?auto=format&fit=crop&w=800&q=80",
     "description": "Crunchy fried zinger strips wrapped in soft Lebanese pita with tangy sauce.",
     "featured": false
   },
@@ -694,7 +694,7 @@
     "name": "Zinger Cheese Shawarma",
     "price": 320,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
     "description": "Crispy zinger chicken strips loaded with melted cheddar cheese slice in fresh pita.",
     "featured": false
   },
@@ -704,7 +704,7 @@
     "name": "Platter Shawarma",
     "price": 420,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1645696301019-35adcc18cff2?auto=format&fit=crop&w=800&q=80",
     "description": "Open plate carving of spiced chicken, french fries, garlic dip and 2 warm pitas.",
     "featured": false
   },
@@ -714,7 +714,7 @@
     "name": "TFC Special Oven Baked Paratha",
     "price": 650,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80",
     "description": "Golden flaky paratha stuffed with spicy chicken and baked with bubbling cheese.",
     "featured": true,
     "badge": "Oven Baked"
@@ -725,7 +725,7 @@
     "name": "Zinger Paratha Roll",
     "price": 300,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
     "description": "Crispy fried zinger pieces rolled in a hot flaky paratha with spicy green chutney.",
     "featured": true
   },
@@ -735,7 +735,7 @@
     "name": "Kabab Paratha Roll",
     "price": 320,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?auto=format&fit=crop&w=800&q=80",
     "description": "Grilled spicy seekh kabab wrapped in buttery paratha with mint sauce and crisp onions.",
     "featured": false
   },
@@ -745,7 +745,7 @@
     "name": "Tikka Paratha Roll",
     "price": 320,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
     "description": "Charcoal roasted BBQ tikka boti cubes rolled in hot paratha with onions.",
     "featured": false,
     "isSpicy": true
@@ -756,7 +756,7 @@
     "name": "Malai Boti Paratha Roll",
     "price": 360,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=800&q=80",
     "description": "Succulent creamy malai boti pieces rolled in fresh paratha with special white sauce.",
     "featured": false
   },
@@ -766,7 +766,7 @@
     "name": "Crunchy Tortilla Wrap",
     "price": 380,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80",
     "description": "Crispy tenders, iceberg lettuce, diced tomatoes and creamy ranch in a toasted tortilla.",
     "featured": false
   },
@@ -776,7 +776,7 @@
     "name": "Boti Tortilla Wrap",
     "price": 380,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1628557010376-5b15090b8ef2?auto=format&fit=crop&w=800&q=80",
     "description": "Marinated chicken boti wrapped in soft tortilla with garlic mayo and greens.",
     "featured": false
   },
@@ -786,7 +786,7 @@
     "name": "Malai Boti Tortilla Wrap",
     "price": 450,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
     "description": "Melt-in-mouth creamy malai boti pieces wrapped in warm toasted flour tortilla.",
     "featured": false
   },
@@ -796,7 +796,7 @@
     "name": "Fillet Tortilla Wrap",
     "price": 400,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
     "description": "Char-grilled fillet strips with crisp peppers, onions and chipotle mayonnaise.",
     "featured": false
   },
@@ -806,7 +806,7 @@
     "name": "Cheetos Tortilla Wrap",
     "price": 400,
     "variants": [],
-    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
     "description": "Crispy tenders, flaming Cheetos crunch and liquid cheddar cheese in a warm tortilla.",
     "featured": true,
     "badge": "Crunchy Hot"

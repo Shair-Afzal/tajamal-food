@@ -90,28 +90,12 @@ export const CartPage = () => {
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Cart Items Table / List */}
           <div className="lg:col-span-8 space-y-4">
-            {/* Free Delivery Bar */}
-            <div className="bg-amber-50 rounded-2xl p-4 border border-amber-200/80">
-              <div className="flex items-center justify-between text-xs sm:text-sm font-bold mb-2">
-                {isFreeDelivery ? (
-                  <span className="text-emerald-700 flex items-center gap-1.5">
-                    <CheckCircle className="w-4 h-4 text-emerald-600" />
-                    You unlocked FREE Delivery in Lahore!
-                  </span>
-                ) : (
-                  <span className="text-amber-900">
-                    Add <strong className="text-red-700">{formatCurrency(amountNeededForFreeDelivery)}</strong> more to get FREE Delivery!
-                  </span>
-                )}
-                <span className="text-stone-500">{freeDeliveryPercent}%</span>
-              </div>
-              <div className="w-full h-2 bg-amber-200 rounded-full overflow-hidden">
-                <div
-                  className={`h-full transition-all duration-500 rounded-full ${
-                    isFreeDelivery ? 'bg-emerald-500' : 'bg-gradient-to-r from-red-500 to-amber-500'
-                  }`}
-                  style={{ width: `${freeDeliveryPercent}%` }}
-                />
+            {/* Free Delivery Banner */}
+            <div className="bg-emerald-50 rounded-2xl p-4 border border-emerald-200/80 flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-emerald-600 shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-emerald-800">Free Home Delivery Included! 🎉</p>
+                <p className="text-xs text-emerald-700">All orders delivered free within Lahore.</p>
               </div>
             </div>
 
@@ -211,20 +195,14 @@ export const CartPage = () => {
                   <span>Items Subtotal ({totalItems})</span>
                   <span className="font-bold text-stone-900">{formatCurrency(subtotal)}</span>
                 </div>
-                <div className="flex justify-between text-stone-600">
-                  <span>Estimated Delivery</span>
-                  <span>
-                    {deliveryFee === 0 ? (
-                      <span className="text-emerald-600 font-extrabold uppercase text-xs">FREE</span>
-                    ) : (
-                      <span className="font-bold text-stone-900">{formatCurrency(deliveryFee)}</span>
-                    )}
-                  </span>
+                <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold py-0.5">
+                  <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>Free Home Delivery Included</span>
                 </div>
                 <div className="flex justify-between items-baseline pt-3 border-t border-stone-200 text-stone-900">
                   <span className="font-display font-bold text-lg">Total Amount</span>
                   <span className="font-display font-black text-2xl text-red-600">
-                    {formatCurrency(total)}
+                    {formatCurrency(subtotal)}
                   </span>
                 </div>
               </div>

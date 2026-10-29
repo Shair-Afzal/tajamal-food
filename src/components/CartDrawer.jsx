@@ -223,20 +223,14 @@ export const CartDrawer = () => {
                   <span>Subtotal</span>
                   <span className="font-semibold text-stone-900">{formatCurrency(subtotal)}</span>
                 </div>
-                <div className="flex justify-between text-stone-600">
-                  <span>Delivery Fee</span>
-                  <span>
-                    {deliveryFee === 0 ? (
-                      <span className="text-emerald-600 font-bold uppercase text-xs">FREE</span>
-                    ) : (
-                      <span className="font-semibold text-stone-900">{formatCurrency(deliveryFee)}</span>
-                    )}
-                  </span>
+                <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold py-0.5">
+                  <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>Free Home Delivery Included</span>
                 </div>
                 <div className="flex justify-between items-baseline pt-2 border-t border-stone-200 text-stone-900">
-                  <span className="font-display font-bold text-base">Grand Total</span>
+                  <span className="font-display font-bold text-base">Total</span>
                   <span className="font-display font-black text-xl text-red-600">
-                    {formatCurrency(total)}
+                    {formatCurrency(subtotal)}
                   </span>
                 </div>
               </div>
