@@ -129,10 +129,10 @@ export const CartProvider = ({ children }) => {
     return cartItems.reduce((acc, item) => acc + (item.unitPrice * item.quantity), 0);
   }, [cartItems]);
 
-  const isFreeDelivery = subtotal >= CONFIG.freeDeliveryThreshold;
-  const deliveryFee = subtotal === 0 ? 0 : (isFreeDelivery ? 0 : CONFIG.deliveryFee);
-  const amountNeededForFreeDelivery = Math.max(0, CONFIG.freeDeliveryThreshold - subtotal);
-  const total = subtotal + deliveryFee;
+  const isFreeDelivery = true;
+  const deliveryFee = 0;
+  const amountNeededForFreeDelivery = 0;
+  const total = subtotal;
 
   const value = {
     cartItems,

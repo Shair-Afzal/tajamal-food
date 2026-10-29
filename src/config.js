@@ -37,9 +37,8 @@ export const CONFIG = {
   city: "Lahore",
   googleMapsUrl: "https://maps.google.com/?q=Ghoray+Shah+Road+Opposite+PSO+Petrol+Pump+Lahore",
   currency: SHOP.currency,
-  currencyCode: "PKR",
-  deliveryFee: 100,
-  freeDeliveryThreshold: 1500,
+  deliveryFee: 0,
+  freeDeliveryThreshold: 0,
   openingHours: {
     days: "Monday - Sunday",
     time: "4:00 PM - 4:00 AM",

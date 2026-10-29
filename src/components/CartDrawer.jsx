@@ -47,10 +47,6 @@ export const CartDrawer = () => {
     window.open(createWhatsAppOrderLink(quickOrder), '_blank');
   };
 
-  const freeDeliveryPercent = Math.min(
-    100,
-    Math.round((subtotal / CONFIG.freeDeliveryThreshold) * 100)
-  );
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden animate-fadeIn">
@@ -87,30 +83,16 @@ export const CartDrawer = () => {
             </button>
           </div>
 
-          {/* Free Delivery Goal Tracker */}
+          {/* Free Delivery Banner */}
           {cartItems.length > 0 && (
-            <div className="bg-amber-50/80 border-b border-amber-200/60 px-5 py-3">
-              <div className="flex items-center justify-between text-xs font-bold mb-1.5">
-                {isFreeDelivery ? (
-                  <span className="text-emerald-700 flex items-center gap-1">
-                    <CheckCircle className="w-4 h-4 text-emerald-600" />
-                    Unlocked FREE Delivery!
-                  </span>
-                ) : (
-                  <span className="text-amber-900">
-                    Add <strong className="text-red-700">{formatCurrency(amountNeededForFreeDelivery)}</strong> more for FREE Delivery!
-                  </span>
-                )}
-                <span className="text-stone-500">{freeDeliveryPercent}%</span>
-              </div>
-              <div className="w-full h-2 bg-amber-200/60 rounded-full overflow-hidden">
-                <div
-                  className={`h-full transition-all duration-500 rounded-full ${
-                    isFreeDelivery ? 'bg-emerald-500' : 'bg-gradient-to-r from-red-500 to-amber-500'
-                  }`}
-                  style={{ width: `${freeDeliveryPercent}%` }}
-                />
-              </div>
+            <div className="bg-emerald-50 border-b border-emerald-200/60 px-5 py-2.5 flex items-center justify-between text-xs font-bold text-emerald-800">
+              <span className="flex items-center gap-1.5">
+                <CheckCircle className="w-4 h-4 text-emerald-600" />
+                Free Home Delivery on all orders!
+              </span>
+              <span className="text-[10px] uppercase tracking-wider bg-emerald-200/60 text-emerald-900 px-2.5 py-0.5 rounded-full font-extrabold">
+                FREE
+              </span>
             </div>
           )}
 
