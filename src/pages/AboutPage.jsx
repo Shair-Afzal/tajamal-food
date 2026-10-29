@@ -120,7 +120,7 @@ export const AboutPage = () => {
                 Midnight Craving Kings
               </h3>
               <p className="text-sm text-stone-500 leading-relaxed">
-                Open until 3:00 AM every night! Whether it is a study session, late work shift, or late night friends hangout, TFC delivers.
+                Open until 4:00 AM every night! Whether it is a study session, late work shift, or late night friends hangout, TFC delivers.
               </p>
             </div>
           </div>

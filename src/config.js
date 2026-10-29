@@ -42,7 +42,7 @@ export const CONFIG = {
   freeDeliveryThreshold: 1500,
   openingHours: {
     days: "Monday - Sunday",
-    time: "1:00 PM - 3:00 AM",
+    time: "4:00 PM - 4:00 AM",
     status: "Open Now"
   },
   socialLinks: {

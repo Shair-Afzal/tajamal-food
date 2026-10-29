@@ -18,8 +18,8 @@ export const Footer = () => {
                 className="h-14 w-auto object-contain bg-white/10 rounded-2xl p-1"
               />
               <div>
-                <span className="text-2xl font-black text-white font-display">
-                  TAJAMAL <span className="text-amber-500">CHICKEN</span>
+                <span className="text-xl sm:text-2xl font-black text-white font-display">
+                  TAJAMAL <span className="text-amber-500">FRIED CHICKEN</span>
                 </span>
                 <p className="text-xs text-amber-400 font-semibold uppercase tracking-wider">
                   Taste Jo Deewana Karde

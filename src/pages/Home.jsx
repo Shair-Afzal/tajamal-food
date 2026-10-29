@@ -380,7 +380,7 @@ export const Home = () => {
               Craving Late Night Fast Food?
             </h3>
             <p className="text-amber-100 text-sm">
-              We deliver late night until 3:00 AM! Call or place order online.
+              We deliver late night until 4:00 AM! Call or place order online.
             </p>
           </div>
           <div className="flex items-center gap-3">
